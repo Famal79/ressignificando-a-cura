@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Protótipo educativo sobre cuidados paliativos, PICS, espiritualidade, capelania e os múltiplos sentidos da cura pelo cuidado." />
+  <meta name="description" content="Informação acessível e baseada em evidências sobre cuidados paliativos, PICS, apoio à família, espiritualidade e capelania em saúde." />
   <title>Ressignificando a Cura pelo Cuidado</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,25 +15,26 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Página inicial">
+      <a class="brand" href="#inicio" aria-label="Ressignificando a Cura — página inicial">
         <span class="brand-mark" aria-hidden="true">✦</span>
         <span><strong>Ressignificando a Cura</strong><small>pelo cuidado</small></span>
       </a>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">Menu</button>
+
       <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
-        <a href="#cuidados">Cuidados paliativos</a>
+        <a href="#paliativos">Cuidados paliativos</a>
+        <a href="#necessidades">Sintomas e conforto</a>
+        <a href="#familia">Família e cuidadores</a>
         <a href="#pics">PICS</a>
         <a href="#espiritualidade">Espiritualidade</a>
-        <a href="#necessidades">Sintomas e conforto</a>
-        <a href="#familia">Família</a>
         <a href="#evidencias">Evidências</a>
-        <a href="#sobre">Sobre</a>
       </nav>
 
       <div class="font-controls" aria-label="Controles de tamanho do texto">
-        <button id="font-down" aria-label="Diminuir fonte">A−</button>
-        <button id="font-up" aria-label="Aumentar fonte">A+</button>
+        <button id="font-down" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+        <button id="font-reset" type="button" aria-label="Restaurar tamanho do texto">A</button>
+        <button id="font-up" type="button" aria-label="Aumentar tamanho do texto">A+</button>
       </div>
     </div>
   </header>
@@ -44,63 +45,136 @@
         <div class="hero-copy">
           <span class="eyebrow">Ciência, acolhimento e integralidade</span>
           <h1>Cuidar também é uma forma de curar.</h1>
-          <p>Quando a doença não pode ser eliminada, ainda é possível aliviar o sofrimento, preservar a dignidade, fortalecer vínculos e encontrar novos sentidos para viver.</p>
+          <p>Quando a doença muda a vida, o cuidado ainda pode aliviar o sofrimento, preservar a dignidade, apoiar escolhas e fortalecer aquilo que continua tendo sentido.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#sobre">Conheça o projeto</a>
-            <a class="button secondary" href="#cuidados">Explore os conteúdos</a>
+            <a class="button primary" href="#explorar">Encontre o que procura</a>
+            <a class="button secondary" href="#sobre">Conheça o projeto</a>
           </div>
         </div>
-        <div class="hero-art" aria-label="Ilustração abstrata de cuidado e acolhimento">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-          <div class="care-card">
-            <span class="care-icon">♡</span>
-            <strong>Alívio</strong>
-            <strong>Presença</strong>
-            <strong>Dignidade</strong>
-            <strong>Sentido</strong>
+
+        <aside class="audience-panel" aria-labelledby="audience-title">
+          <span class="eyebrow">Este espaço é para</span>
+          <h2 id="audience-title">Pessoas que cuidam e são cuidadas.</h2>
+          <div class="audience-list">
+            <div><span aria-hidden="true">01</span><p><strong>Pacientes</strong> e pessoas vivendo com doenças graves ou crônicas.</p></div>
+            <div><span aria-hidden="true">02</span><p><strong>Familiares e cuidadores</strong> que precisam de orientação e apoio.</p></div>
+            <div><span aria-hidden="true">03</span><p><strong>Profissionais e estudantes</strong> interessados em cuidado integral.</p></div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <section class="editorial-note">
+    <section id="compromisso" class="editorial-note" aria-label="Compromisso editorial">
       <div class="container note-inner">
         <span aria-hidden="true">ⓘ</span>
-        <p><strong>Compromisso editorial:</strong> informação de qualidade, linguagem acessível e respeito às evidências científicas. Este conteúdo não substitui avaliação profissional.</p>
+        <p><strong>Compromisso editorial:</strong> linguagem acessível, respeito às evidências científicas, transparência sobre incertezas e ausência de promessas de cura. O conteúdo é educativo e não substitui avaliação profissional.</p>
       </div>
     </section>
 
-    <section id="sobre" class="section">
+    <section id="explorar" class="section path-section">
       <div class="container">
         <div class="section-heading narrow">
-          <span class="eyebrow">Um novo olhar</span>
-          <h2>O que significa ressignificar a cura?</h2>
-          <p>Ampliar o conceito de cura é reconhecer que o cuidado pode transformar a experiência do adoecimento, mesmo quando não há possibilidade de reversão da doença.</p>
+          <span class="eyebrow">Comece por aqui</span>
+          <h2>Escolha o caminho mais próximo da sua necessidade.</h2>
+          <p>Todos os atalhos abaixo levam a uma seção real desta página.</p>
         </div>
-        <div class="cards four-cols">
-          <article class="card"><span class="card-icon">◌</span><h3>Alívio do sofrimento</h3><p>Reduzir dor, falta de ar, ansiedade e outros sintomas que limitam a qualidade de vida.</p></article>
-          <article class="card"><span class="card-icon">∞</span><h3>Presença e vínculo</h3><p>Estar ao lado, ouvir com atenção e reconhecer a história e os valores de cada pessoa.</p></article>
-          <article class="card"><span class="card-icon">◇</span><h3>Autonomia e dignidade</h3><p>Apoiar escolhas informadas e preservar o protagonismo durante todo o cuidado.</p></article>
-          <article class="card"><span class="card-icon">✦</span><h3>Sentido e integralidade</h3><p>Cuidar das dimensões física, emocional, social, familiar e espiritual.</p></article>
+
+        <div class="path-grid">
+          <a class="path-card" href="#paliativos"><span>01</span><h3>Entender cuidados paliativos</h3><p>Conceitos, momento de início e mitos frequentes.</p><strong>Ir para o tema →</strong></a>
+          <a class="path-card" href="#necessidades"><span>02</span><h3>Buscar por sintoma</h3><p>Dor, ansiedade, fadiga, falta de ar, náuseas, sono e luto.</p><strong>Ir para o tema →</strong></a>
+          <a class="path-card" href="#familia"><span>03</span><h3>Apoiar família e cuidadores</h3><p>Comunicação, sobrecarga, rede de apoio e cuidados pediátricos.</p><strong>Ir para o tema →</strong></a>
+          <a class="path-card" href="#pics"><span>04</span><h3>Conhecer as PICS</h3><p>Possibilidades, limites, segurança e complementaridade.</p><strong>Ir para o tema →</strong></a>
+          <a class="path-card" href="#espiritualidade"><span>05</span><h3>Espiritualidade e capelania</h3><p>Sentido, esperança, escuta e sofrimento espiritual.</p><strong>Ir para o tema →</strong></a>
+          <a class="path-card" href="#evidencias"><span>06</span><h3>Entender as evidências</h3><p>Como comunicar benefícios possíveis, incertezas e riscos.</p><strong>Ir para o tema →</strong></a>
         </div>
       </div>
     </section>
 
-    <section id="cuidados" class="section alt-bg">
+    <section id="sobre" class="section alt-bg">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Comece por onde você precisa</span>
-          <h2>Caminhos de cuidado e informação</h2>
+        <div class="section-heading narrow">
+          <span class="eyebrow">Sobre o projeto</span>
+          <h2>Informação para cuidar da pessoa, não apenas da doença.</h2>
+          <p>Ressignificar a cura não significa negar tratamentos ou abandonar a medicina. Significa reconhecer que alívio, autonomia, vínculo e sentido também são resultados importantes do cuidado.</p>
         </div>
-        <div class="cards three-cols journey-grid">
-          <article class="journey-card"><span>01</span><h3>Entenda os cuidados paliativos</h3><p>Conceitos, mitos, direitos e possibilidades de cuidado desde o diagnóstico.</p><a href="#">Ver conteúdo demonstrativo →</a></article>
-          <article class="journey-card"><span>02</span><h3>Encontre orientação por sintoma</h3><p>Informações gerais sobre dor, ansiedade, fadiga, falta de ar e conforto.</p><a href="#necessidades">Explorar necessidades →</a></article>
-          <article class="journey-card"><span>03</span><h3>Conheça as PICS</h3><p>Benefícios possíveis, limites, segurança e complementaridade.</p><a href="#pics">Conhecer práticas →</a></article>
-          <article class="journey-card"><span>04</span><h3>Apoio à família e ao cuidador</h3><p>Sobrecarga, comunicação, organização da rotina e rede de apoio.</p><a href="#familia">Ver orientações →</a></article>
-          <article class="journey-card"><span>05</span><h3>Cuidados paliativos pediátricos</h3><p>Abordagens adaptadas à infância e à centralidade da família.</p><a href="#familia">Conhecer a proposta →</a></article>
-          <article class="journey-card"><span>06</span><h3>Plantas medicinais e segurança</h3><p>Interações, contraindicações e uso responsável de fitoterápicos.</p><a href="#evidencias">Ler alertas →</a></article>
-          <article class="journey-card"><span>07</span><h3>Medicina, espiritualidade e capelania</h3><p>Sentido, esperança, sofrimento espiritual e cuidado respeitoso às crenças e escolhas.</p><a href="#espiritualidade">Conhecer essa dimensão →</a></article>
+
+        <div class="cards four-cols">
+          <article class="card"><span class="card-icon" aria-hidden="true">◌</span><h3>Alívio do sofrimento</h3><p>Identificar e tratar sintomas físicos, emocionais, sociais e espirituais.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">∞</span><h3>Presença e vínculo</h3><p>Escutar com atenção e reconhecer a história, os valores e as relações da pessoa.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">◇</span><h3>Autonomia e dignidade</h3><p>Apoiar escolhas informadas e respeitar prioridades individuais e familiares.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">✦</span><h3>Integralidade</h3><p>Articular cuidado clínico, apoio familiar, PICS e dimensão espiritual com limites éticos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="paliativos" class="section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="eyebrow">Cuidados paliativos</span>
+          <h2>Cuidado ativo para viver com mais conforto, clareza e dignidade.</h2>
+          <p>Cuidados paliativos são voltados à prevenção e ao alívio do sofrimento associado a doenças graves. Podem caminhar junto ao tratamento da doença e devem considerar necessidades, valores e objetivos de cada pessoa.</p>
+        </div>
+
+        <div class="definition-grid">
+          <article class="definition-card"><span>01</span><h3>Podem começar cedo</h3><p>Não se restringem aos últimos dias de vida e podem ser oferecidos desde fases iniciais de uma doença grave.</p></article>
+          <article class="definition-card"><span>02</span><h3>Não significam desistir</h3><p>Podem coexistir com tratamentos destinados a controlar, estabilizar ou modificar a doença.</p></article>
+          <article class="definition-card"><span>03</span><h3>Consideram a pessoa inteira</h3><p>Incluem sintomas, emoções, relações, decisões, espiritualidade e necessidades da família.</p></article>
+        </div>
+
+        <div class="two-col-callout">
+          <div>
+            <h3>Perguntas úteis para conversar com a equipe</h3>
+            <ul class="check-list">
+              <li>Quais sintomas precisam de prioridade agora?</li>
+              <li>Quais são os objetivos possíveis do tratamento?</li>
+              <li>Como as preferências da pessoa serão consideradas?</li>
+              <li>Que apoio existe para familiares e cuidadores?</li>
+            </ul>
+          </div>
+          <aside class="myth-box">
+            <span class="eyebrow">Uma distinção importante</span>
+            <p><strong>Cuidado paliativo não é abandono.</strong> É uma abordagem planejada para reduzir sofrimento, melhorar comunicação e alinhar o cuidado ao que importa para a pessoa.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="necessidades" class="section alt-bg">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="eyebrow">Sintomas e conforto</span>
+          <h2>Busque por uma necessidade.</h2>
+          <p>Selecione um tema para ver o que observar, quando procurar avaliação e quais recursos podem ser discutidos com a equipe.</p>
+        </div>
+
+        <div class="needs-layout">
+          <div class="needs-tabs" role="tablist" aria-label="Necessidades de cuidado">
+            <button id="tab-dor" class="need-tab active" data-need="dor" type="button" role="tab" aria-selected="true" aria-controls="need-content" tabindex="0">Dor</button>
+            <button id="tab-ansiedade" class="need-tab" data-need="ansiedade" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Ansiedade</button>
+            <button id="tab-fadiga" class="need-tab" data-need="fadiga" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Fadiga</button>
+            <button id="tab-dispneia" class="need-tab" data-need="dispneia" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Falta de ar</button>
+            <button id="tab-nauseas" class="need-tab" data-need="nauseas" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Náuseas</button>
+            <button id="tab-sono" class="need-tab" data-need="sono" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Sono</button>
+            <button id="tab-luto" class="need-tab" data-need="luto" type="button" role="tab" aria-selected="false" aria-controls="need-content" tabindex="-1">Luto</button>
+          </div>
+          <div id="need-content" class="need-content" role="tabpanel" tabindex="0" aria-labelledby="tab-dor" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="familia" class="section family-section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="eyebrow">Família e cuidadores</span>
+          <h2>Quem acompanha o cuidado também precisa ser cuidado.</h2>
+          <p>A doença grave modifica rotinas, relações e responsabilidades. Oferecer informação, escuta e suporte à família reduz desorganização e ajuda a construir decisões compartilhadas.</p>
+        </div>
+
+        <div class="cards four-cols">
+          <article class="card"><span class="card-icon" aria-hidden="true">◎</span><h3>Sobrecarga do cuidador</h3><p>Reconhecer cansaço, isolamento, culpa e necessidade de descanso e divisão de tarefas.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">↔</span><h3>Comunicação familiar</h3><p>Organizar informações, alinhar expectativas e incluir a pessoa cuidada sempre que possível.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">⌂</span><h3>Rede de apoio</h3><p>Mapear familiares, amigos, serviços e recursos comunitários disponíveis.</p></article>
+          <article class="card"><span class="card-icon" aria-hidden="true">◒</span><h3>Pediatria e luto</h3><p>Adaptar comunicação à idade, apoiar responsáveis e respeitar diferentes formas de expressão.</p></article>
         </div>
       </div>
     </section>
@@ -110,9 +184,9 @@
         <div>
           <span class="eyebrow">PICS no cuidado paliativo</span>
           <h2>Complementar, individualizar e cuidar com segurança.</h2>
-          <p>As Práticas Integrativas e Complementares em Saúde podem ampliar o cuidado quando incorporadas ao plano terapêutico de forma responsável.</p>
-          <p>Seu uso deve considerar a situação clínica, as preferências da pessoa, a formação profissional, as evidências disponíveis e os recursos do serviço.</p>
-          <div class="warning-box"><strong>Importante:</strong> PICS não substituem tratamentos convencionais necessários e não devem ser apresentadas como promessa de cura.</div>
+          <p>As Práticas Integrativas e Complementares em Saúde podem contribuir para conforto e bem-estar quando incorporadas de forma responsável ao plano terapêutico.</p>
+          <p>A escolha deve considerar situação clínica, preferências, objetivos, evidências disponíveis, qualificação profissional e possíveis riscos ou interações.</p>
+          <div class="warning-box"><strong>Importante:</strong> PICS não substituem tratamentos necessários e não devem ser apresentadas como promessa de cura.</div>
         </div>
         <div class="tags-panel" aria-label="Exemplos de práticas integrativas">
           <span>Acupuntura</span><span>Meditação</span><span>Musicoterapia</span><span>Arteterapia</span><span>Yoga</span><span>Aromaterapia</span><span>Fitoterapia</span><span>Reiki</span><span>Terapia Comunitária</span>
@@ -123,20 +197,17 @@
     <section id="espiritualidade" class="section spirituality-section">
       <div class="container">
         <div class="section-heading narrow">
-          <span class="eyebrow">Entre a ciência, a espiritualidade e a presença</span>
-          <h2>Cuidar do corpo, acolher o sentido.</h2>
-          <p>A medicina pode tratar a doença e aliviar sintomas. A espiritualidade pode ajudar a pessoa a elaborar esperança, medo, valores, vínculos e sentido. O cuidado integral cria um espaço ético de encontro entre essas dimensões.</p>
+          <span class="eyebrow">Espiritualidade e capelania</span>
+          <h2>Cuidar do corpo e acolher perguntas de sentido.</h2>
+          <p>Questões de esperança, medo, culpa, pertencimento, fé, legado e finitude podem ganhar força durante o adoecimento. O cuidado espiritual oferece escuta sem impor respostas.</p>
         </div>
 
         <div class="spirituality-grid">
           <article class="spirituality-intro">
             <h3>Espiritualidade não é sinônimo de religião</h3>
-            <p>Espiritualidade pode envolver propósito, valores, esperança, conexão, pertencimento e busca de significado. A religião é uma forma possível de expressão, mas o cuidado espiritual também deve acolher pessoas sem religião, agnósticas ou ateias.</p>
+            <p>Pode envolver propósito, valores, conexão, esperança e busca de significado. O cuidado espiritual deve acolher pessoas religiosas, sem religião, agnósticas ou ateias.</p>
             <div class="principles-list">
-              <span>Respeito às crenças</span>
-              <span>Consentimento</span>
-              <span>Escuta sem julgamento</span>
-              <span>Ausência de proselitismo</span>
+              <span>Consentimento</span><span>Respeito às crenças</span><span>Escuta sem julgamento</span><span>Sem proselitismo</span>
             </div>
           </article>
 
@@ -144,130 +215,105 @@
             <span class="chaplaincy-icon" aria-hidden="true">◍</span>
             <div>
               <span class="eyebrow">Capelania em saúde</span>
-              <h3>Presença, escuta e cuidado espiritual</h3>
-              <p>A capelania oferece apoio espiritual e religioso a pacientes, familiares e profissionais, respeitando diferentes tradições e também o direito de não professar uma religião.</p>
+              <h3>Presença, escuta e apoio espiritual</h3>
+              <p>Pode apoiar pacientes, familiares e profissionais, facilitar rituais e contato com representantes religiosos, sempre conforme o desejo da pessoa.</p>
             </div>
           </article>
         </div>
 
-        <div class="cards three-cols spirituality-cards">
-          <article class="card"><span class="card-icon">⌁</span><h3>Sentido e esperança</h3><p>Ajudar a pessoa a reconhecer o que ainda importa e a construir uma esperança realista, que pode significar conforto, presença, reconciliação ou dignidade.</p></article>
-          <article class="card"><span class="card-icon">◎</span><h3>Sofrimento espiritual</h3><p>Acolher perda de sentido, culpa, medo da morte, revolta, conflitos religiosos, sensação de abandono e necessidade de perdão.</p></article>
-          <article class="card"><span class="card-icon">◒</span><h3>Rituais e despedidas</h3><p>Facilitar oração, silêncio, bênçãos, despedidas e contato com representantes religiosos, sempre conforme o desejo da pessoa.</p></article>
-        </div>
-
         <div class="chaplaincy-details">
           <div>
-            <span class="eyebrow">O que a capelania pode oferecer</span>
+            <span class="eyebrow">Quando esse apoio pode ser útil</span>
             <ul>
-              <li>Escuta qualificada diante de medo, culpa, perda e finitude.</li>
-              <li>Apoio na elaboração de sentido, legado, perdão e reconciliação.</li>
-              <li>Articulação com representantes da tradição religiosa escolhida pelo paciente.</li>
-              <li>Suporte à família durante a terminalidade, a morte e o luto.</li>
-              <li>Colaboração com a equipe multiprofissional, com respeito à confidencialidade.</li>
+              <li>Perda de sentido, desesperança ou medo da morte.</li>
+              <li>Culpa, necessidade de perdão, reconciliação ou despedida.</li>
+              <li>Conflitos religiosos ou sensação de abandono espiritual.</li>
+              <li>Desejo de oração, silêncio, ritual ou contato com uma tradição.</li>
             </ul>
           </div>
           <div class="limits-box">
-            <span class="eyebrow">Limites éticos essenciais</span>
-            <p>A capelania não deve diagnosticar, prescrever, interferir em decisões médicas, atribuir a doença a punição espiritual, prometer cura ou desencorajar tratamentos.</p>
+            <span class="eyebrow">Limites éticos</span>
+            <p>A capelania não deve diagnosticar, prescrever, interferir em decisões médicas, atribuir doença a punição espiritual ou desencorajar tratamentos.</p>
             <strong>O cuidado espiritual deve ser oferecido, nunca imposto.</strong>
           </div>
-        </div>
-
-        <div class="signals-box">
-          <h3>Quando considerar apoio espiritual ou de capelania?</h3>
-          <div class="signals-grid">
-            <blockquote>“Minha vida perdeu o sentido.”</blockquote>
-            <blockquote>“Preciso pedir perdão ou me despedir.”</blockquote>
-            <blockquote>“Sinto que Deus me abandonou.”</blockquote>
-            <blockquote>“Quero falar com alguém da minha tradição.”</blockquote>
-          </div>
-          <p>Essas falas podem expressar sofrimento espiritual, psicológico ou ambos. A abordagem mais segura é integrada, respeitosa e multiprofissional.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="necessidades" class="section alt-bg">
-      <div class="container">
-        <div class="section-heading narrow">
-          <span class="eyebrow">Navegação interativa</span>
-          <h2>Busque por uma necessidade</h2>
-          <p>Selecione um tema para visualizar um exemplo de como o conteúdo pode ser organizado.</p>
-        </div>
-        <div class="needs-layout">
-          <div class="needs-tabs" role="tablist" aria-label="Necessidades">
-            <button class="need-tab active" data-need="dor" role="tab">Dor</button>
-            <button class="need-tab" data-need="ansiedade" role="tab">Ansiedade</button>
-            <button class="need-tab" data-need="fadiga" role="tab">Fadiga</button>
-            <button class="need-tab" data-need="dispneia" role="tab">Falta de ar</button>
-            <button class="need-tab" data-need="nauseas" role="tab">Náuseas</button>
-            <button class="need-tab" data-need="sono" role="tab">Sono</button>
-            <button class="need-tab" data-need="luto" role="tab">Luto</button>
-          </div>
-          <div id="need-content" class="need-content" aria-live="polite"></div>
         </div>
       </div>
     </section>
 
     <section id="evidencias" class="section">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Transparência científica</span>
-          <h2>Como avaliamos as evidências</h2>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">Transparência científica</span><h2>Como apresentamos as evidências.</h2></div>
+          <p>O nível de evidência depende da prática, do objetivo clínico e da população estudada. Uma mesma intervenção pode ter resultados diferentes conforme o contexto.</p>
         </div>
+
         <div class="evidence-list">
-          <div class="evidence-item level-1"><span></span><strong>Evidência mais consistente</strong><p>Estudos de qualidade razoável ou boa para uma finalidade específica.</p></div>
-          <div class="evidence-item level-2"><span></span><strong>Evidência promissora</strong><p>Resultados favoráveis, ainda com limitações metodológicas.</p></div>
-          <div class="evidence-item level-3"><span></span><strong>Evidência insuficiente</strong><p>Dados ainda escassos para conclusões seguras.</p></div>
-          <div class="evidence-item level-4"><span></span><strong>Uso tradicional com evidência limitada</strong><p>Relevância histórica ou cultural, mas pouca confirmação clínica.</p></div>
-          <div class="evidence-item level-5"><span></span><strong>Atenção ou risco</strong><p>Possíveis contraindicações, interações ou risco de atraso terapêutico.</p></div>
+          <div class="evidence-item level-1"><span aria-hidden="true"></span><strong>Evidência mais consistente</strong><p>Estudos de qualidade razoável ou boa para uma finalidade específica.</p></div>
+          <div class="evidence-item level-2"><span aria-hidden="true"></span><strong>Evidência promissora</strong><p>Resultados favoráveis, ainda com limitações metodológicas.</p></div>
+          <div class="evidence-item level-3"><span aria-hidden="true"></span><strong>Evidência insuficiente</strong><p>Dados escassos ou inconclusivos para recomendações seguras.</p></div>
+          <div class="evidence-item level-4"><span aria-hidden="true"></span><strong>Uso tradicional</strong><p>Relevância histórica ou cultural, sem confirmação clínica suficiente.</p></div>
+          <div class="evidence-item level-5"><span aria-hidden="true"></span><strong>Atenção ou risco</strong><p>Possíveis contraindicações, interações ou risco de atraso terapêutico.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section articles alt-bg">
+    <section id="artigos" class="section articles alt-bg">
       <div class="container">
         <div class="section-heading split-heading">
-          <div><span class="eyebrow">Conteúdo demonstrativo</span><h2>Artigos em destaque</h2></div>
-          <p>Os textos abaixo são modelos de pauta e ainda exigem revisão científica e referências verificadas.</p>
+          <div><span class="eyebrow">Biblioteca em construção</span><h2>Pautas prioritárias.</h2></div>
+          <p>Os cartões indicam a organização futura do conteúdo. Os artigos completos serão publicados após revisão científica e inclusão de referências verificáveis.</p>
+        </div>
+
+        <div class="cards three-cols">
+          <article class="article-card"><span>Cuidados paliativos</span><h3>Cuidados paliativos não significam desistir</h3><p>Como o cuidado pode começar cedo e caminhar ao lado do tratamento.</p><small>Conteúdo em desenvolvimento</small></article>
+          <article class="article-card"><span>Sintomas</span><h3>Como preparar uma conversa sobre dor e conforto</h3><p>O que observar e quais informações ajudam a equipe assistencial.</p><small>Conteúdo em desenvolvimento</small></article>
+          <article class="article-card"><span>Família</span><h3>Como apoiar quem cuida</h3><p>Sobrecarga, organização da rotina e importância da rede de apoio.</p><small>Conteúdo em desenvolvimento</small></article>
+          <article class="article-card"><span>PICS</span><h3>Práticas integrativas: benefícios, limites e segurança</h3><p>Como interpretar possibilidades sem criar promessas indevidas.</p><small>Conteúdo em desenvolvimento</small></article>
+          <article class="article-card"><span>Espiritualidade</span><h3>Esperança realista diante da doença grave</h3><p>Preservar sentido sem negar a realidade clínica.</p><small>Conteúdo em desenvolvimento</small></article>
+          <article class="article-card"><span>Capelania</span><h3>Capelania é apenas para pessoas religiosas?</h3><p>Escuta espiritual, inter-religiosa e não confessional no cuidado.</p><small>Conteúdo em desenvolvimento</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profissionais" class="section professional">
+      <div class="container professional-box">
+        <div>
+          <span class="eyebrow light">Profissionais e gestores</span>
+          <h2>Área técnica em desenvolvimento.</h2>
+          <p>Está prevista a organização de protocolos, instrumentos de avaliação, fluxos assistenciais, materiais de educação permanente e referências institucionais.</p>
+        </div>
+        <a class="button light-button" href="#evidencias">Consultar critérios de evidência</a>
+      </div>
+    </section>
+
+    <section id="projeto" class="section project-section">
+      <div class="container">
+        <div class="section-heading narrow">
+          <span class="eyebrow">Compromissos do projeto</span>
+          <h2>Clareza sobre o que este site oferece.</h2>
         </div>
         <div class="cards three-cols">
-          <article class="article-card"><span>Cuidados paliativos</span><h3>Cuidados paliativos não significam desistir</h3><p>Como o cuidado pode começar cedo e caminhar ao lado do tratamento da doença.</p></article>
-          <article class="article-card"><span>Reflexão</span><h3>Quando o cuidado amplia o sentido da cura</h3><p>Alívio, vínculo, autonomia e dignidade como formas de transformação.</p></article>
-          <article class="article-card"><span>PICS</span><h3>Meditação no manejo da ansiedade: o que sabemos</h3><p>Possibilidades, limites e cuidados na interpretação das evidências.</p></article>
-          <article class="article-card"><span>Segurança</span><h3>Fitoterápicos: natural não significa isento de risco</h3><p>Por que interações, dose e condição clínica precisam ser consideradas.</p></article>
-          <article id="familia" class="article-card"><span>Família</span><h3>Como apoiar quem cuida</h3><p>Sobrecarga, organização da rotina e importância da rede de apoio.</p></article>
-          <article class="article-card"><span>Pediatria</span><h3>Cuidado paliativo pediátrico e a centralidade da família</h3><p>Comunicação, expressão não verbal e respeito ao desenvolvimento infantil.</p></article>
-          <article class="article-card"><span>Espiritualidade</span><h3>Esperança realista diante da doença grave</h3><p>Como preservar sentido e projetos possíveis sem negar a realidade clínica.</p></article>
-          <article class="article-card"><span>Capelania</span><h3>Capelania é apenas para pessoas religiosas?</h3><p>O papel da escuta espiritual, inter-religiosa e não confessional no cuidado.</p></article>
-          <article class="article-card"><span>Cuidado integral</span><h3>Medicina, psicologia e capelania: como se complementam</h3><p>Diferenças de atuação, limites profissionais e colaboração multiprofissional.</p></article>
+          <article class="project-card"><h3>Política editorial</h3><p>Conteúdos devem indicar fontes, data de revisão, autoria ou responsabilidade técnica e grau de certeza das afirmações.</p></article>
+          <article class="project-card"><h3>Acessibilidade</h3><p>Texto legível, navegação por teclado, controles de fonte, contraste adequado e linguagem compreensível para o público geral.</p></article>
+          <article class="project-card"><h3>Escopo e limites</h3><p>O site oferece educação em saúde. Não realiza diagnóstico, prescrição, atendimento de urgência ou substituição da equipe assistencial.</p></article>
         </div>
-      </div>
-    </section>
-
-    <section class="section professional">
-      <div class="container professional-box">
-        <div><span class="eyebrow light">Área técnica</span><h2>Conteúdo para profissionais e gestores</h2><p>Protocolos, instrumentos de avaliação, materiais de educação permanente, fluxos assistenciais, cuidado espiritual e referências institucionais.</p></div>
-        <a class="button light-button" href="#">Conhecer área profissional</a>
-      </div>
-    </section>
-
-    <section class="section newsletter">
-      <div class="container newsletter-box">
-        <div><span class="eyebrow">Acompanhe o projeto</span><h2>Receba novos conteúdos sobre cuidado integral</h2><p>Formulário demonstrativo. Nenhum dado será enviado nesta versão.</p></div>
-        <form id="newsletter-form"><label class="sr-only" for="email">Seu e-mail</label><input id="email" type="email" placeholder="seuemail@exemplo.com" required><button class="button primary" type="submit">Quero acompanhar</button></form>
       </div>
     </section>
   </main>
 
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Voltar ao início">↑</button>
+
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">✦</span><span><strong>Ressignificando a Cura</strong><small>pelo cuidado</small></span></a><p>Informação, acolhimento e ciência para compreender a pessoa além da doença.</p></div>
-      <div><h3>Conteúdos</h3><a href="#cuidados">Cuidados paliativos</a><a href="#pics">PICS</a><a href="#espiritualidade">Espiritualidade e capelania</a><a href="#necessidades">Sintomas</a><a href="#evidencias">Evidências</a></div>
-      <div><h3>Projeto</h3><a href="#sobre">Sobre</a><a href="#">Política editorial</a><a href="#">Acessibilidade</a><a href="#">Contato</a></div>
-      <div><h3>Aviso</h3><p>Conteúdo educativo. Não substitui consulta, diagnóstico, tratamento ou acompanhamento profissional.</p></div>
+      <div>
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✦</span><span><strong>Ressignificando a Cura</strong><small>pelo cuidado</small></span></a>
+        <p>Informação, acolhimento e ciência para compreender a pessoa além da doença.</p>
+      </div>
+      <div><h3>Conteúdos</h3><a href="#paliativos">Cuidados paliativos</a><a href="#necessidades">Sintomas e conforto</a><a href="#familia">Família e cuidadores</a><a href="#pics">PICS</a></div>
+      <div><h3>Integralidade</h3><a href="#espiritualidade">Espiritualidade e capelania</a><a href="#evidencias">Evidências</a><a href="#artigos">Biblioteca</a><a href="#profissionais">Área técnica</a></div>
+      <div><h3>Projeto</h3><a href="#sobre">Sobre</a><a href="#compromisso">Compromisso editorial</a><a href="#projeto">Política, acessibilidade e limites</a></div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 Ressignificando a Cura pelo Cuidado</span><span>Protótipo para discussão de layout</span></div>
+    <div class="container footer-bottom"><span>© 2026 Ressignificando a Cura pelo Cuidado</span><span>Protótipo educativo em desenvolvimento</span></div>
   </footer>
 
   <script src="script.js"></script>
